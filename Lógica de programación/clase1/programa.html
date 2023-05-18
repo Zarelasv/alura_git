@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+  
+  
+  
+  
+  <canvas width="600" height="400">
+    
+  </canvas>
+<script>
+ var pantalla = document.querySelector("canvas");
+ var pincel = pantalla.getContext("2d");
+ pincel.fillStyle = "lightgray" //característica
+ pincel.fillRect(0,0,600,400); // funcion
+ 
+ pincel.fillStyle = "lightgreen" //característica
+ pincel.fillRect(0,0,200,400);
+ 
+ pincel.fillStyle = "pink" //característica
+ pincel.fillRect(400,0,200,400);
+ 
+ pincel.fillStyle = "yellow"; //propiedad
+ pincel.beginPath();
+ pincel.moveTo(300,200);
+ pincel.lineTo(200,400);
+ pincel.lineTo(400,400);
+ pincel.fill();
+ 
+ pincel.fillStyle = "lightblue";
+ pincel.beginPath();
+ pincel.arc(300,200,50,0,2*3.14);
+ pincel.fill();
+ 
+ 
+ 
+  //document.write("<h1>Hola</h1>")
+</script>
+
+
+
+</body>
+
+</html>
